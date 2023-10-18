@@ -23,6 +23,7 @@ conda install -n venv pandas numpy gensim nltk
 ## Packages snapshot
 
 conda install pip
+
 pip freeze > requirements.txt
 
 ## Used datasets
