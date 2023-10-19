@@ -46,6 +46,6 @@ def get_vectors(model: models.Word2Vec) -> dict:
 if __name__ == '__main__':
     # create_store_model(model_name='test_model')
     model = models.Word2Vec.load('models/test_model')
-    most_similar_vectors = model.wv.most_similar('dad')
+    most_similar_vectors = model.wv.most_similar('native')
     print(most_similar_vectors)
-    print(model.wv.get_vector('dad'))
+    print(model.wv.get_vector('native'))

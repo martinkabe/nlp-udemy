@@ -1,3 +1,6 @@
 venv/
 models/
 data/
+images/
+.env
+.gitignore
