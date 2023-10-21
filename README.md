@@ -4,6 +4,8 @@ https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/20/conda/
 
 conda create -n hface python=3.10 anaconda
 
+conda create -n udemy python=3.10 anaconda
+
 ## Switch to virtual environment (using conda)
 
 conda activate venv
@@ -49,3 +51,7 @@ pip freeze > requirements.txt
 ## Used datasets
 
 jokes.csv -> https://www.kaggle.com/datasets/jiriroz/qa-jokes/
+
+## How to debug a file from current directory with Python in VS Code?
+
+https://stackoverflow.com/questions/73889451/how-to-debug-a-file-from-current-directory-with-python-in-vs-code

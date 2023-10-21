@@ -1,6 +1,12 @@
-venv/
-models/
-data/
-images/
+venv
+venv/*
+models
+models/*
+data
+data/*
+images
+images/*
+large_files
+large_files/*
 .env
 .gitignore
