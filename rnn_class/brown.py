@@ -5,9 +5,10 @@ from builtins import range
 # Note: you may need to update your version of future
 # sudo pip install -U future
 
-
 from nltk.corpus import brown
 import operator
+import nltk
+nltk.download('brown')
 
 KEEP_WORDS = set([
   'king', 'man', 'queen', 'woman',
