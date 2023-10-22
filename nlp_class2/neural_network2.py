@@ -16,8 +16,8 @@ from datetime import datetime
 import os
 import sys
 sys.path.append(os.path.abspath('..'))
-from rnn_class.brown import get_sentences_with_word2idx_limit_vocab, get_sentences_with_word2idx
 from rnn_class.util import get_wikipedia_data
+from rnn_class.brown import get_sentences_with_word2idx_limit_vocab, get_sentences_with_word2idx
 
 
 if __name__ == '__main__':
@@ -72,6 +72,8 @@ if __name__ == '__main__':
             # do not one-hot encoded inputs and targets
             sentence = [start_idx] + sentence + [end_idx]
             n = len(sentence)
+            # We are predicting the next word from the current word.
+            # the last word <end> is excluded in the "input matrix", and the first word <start> is excluded in "output matrix
             inputs = sentence[:n-1]
             targets = sentence[1:]
 
